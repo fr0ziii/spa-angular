@@ -1,6 +1,8 @@
+
 html,
 body {
   height: 100%;
+  width: 100%
 }
 body {
   margin: 0;
@@ -22,7 +24,7 @@ body {
 }
 .nav-tool-items {
   display: inline-block;
-  margin-right: 13px;
+  margin-right: 15px;
 }
 .user-profile {
   margin-left: 15px;
@@ -115,31 +117,61 @@ body .push-right {
   color: #6c75a9;
 }
 .button-wrapper {
-  margin: 20px 0 0 0;
+  margin: 40px 0 0 0;
 }
 @media (max-width: 1024px) {
   .inner-wrapper mat-card {
     width: 100%;
   }
   .mat-sidenav-content {
-    padding: 20px 20px 0;
+    padding: 40px 40px 0;
   }
   .misc-bottom-padding mat-label {
     display: block;
     padding-bottom: 10px;
   }
   .mat-sidenav {
-    width: 230px;
+    width: 300px;
   }
   .mat-nav-list .mat-list-item {
-    font-size: 14px;
+    font-size: 20px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 1000px) {
   .nav-tool-items {
     margin-right: 0;
   }
   .hamburger {
     visibility: visible !important;
   }
+}
+
+.mat-toolbar {
+ background-color: #6200EE;
+ align-items: center;
+
+}
+.mat-toolbar > div{
+  color: white;
+ }
+ .mat-toolbar > button {
+  color: white;
+ }
+
+footer {
+  padding-top: 30px;
+  text-align: center;
+}
+#editButton {
+  background-color: #6200EE;
+}
+#deleteButton {
+  background-color: #6200EE;
+  opacity: 0.5;
+}
+#addButton {
+  background-color: #6200EE;
+}
+#updateButton {
+  background-color: #6200EE;
 }

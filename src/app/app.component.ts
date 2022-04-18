@@ -22,6 +22,7 @@ export class AppComponent {
     }
   }
 
+
   @HostListener('window:resize', ['$event'])
   onResize(event) {
     if (event.target.innerWidth < 768) {
@@ -43,5 +44,9 @@ export class AppComponent {
     } else {
       return false;
     }
+  }
+
+  showMessage() {
+    window.alert("Este proyecto ha sido realizado por David Iglesias Guerra")
   }
 }

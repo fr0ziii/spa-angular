@@ -1,6 +1,6 @@
 <!-- Title group  -->
 <div class="title-group">
-  <h1 class="mat-h1">Add Student</h1>
+  <h1 class="mat-h1">Editar Estudiante</h1>
   <mat-divider fxFlex="1 0"></mat-divider>
 </div>
 
@@ -19,11 +19,11 @@
         <mat-form-field class="example-full-width">
           <input
             matInput
-            placeholder="Student name"
+            placeholder="Nombre del estudiante"
             formControlName="student_name"
           />
           <mat-error *ngIf="handleError('student_name', 'required')">
-            You must provide a<strong>student name</strong>
+            Tienes que introducir un <strong> nombre </strong>
           </mat-error>
         </mat-form-field>
 
@@ -31,17 +31,17 @@
         <mat-form-field class="example-full-width">
           <input
             matInput
-            placeholder="Student email"
+            placeholder="Correo eléctronico del estudiante"
             formControlName="student_email"
           />
           <mat-error *ngIf="handleError('student_email', 'required')">
-            You must provide a<strong>student email</strong>
+            Tienes que introducir un <strong>correo eléctronico</strong>
           </mat-error>
         </mat-form-field>
 
         <!-- Section -->
         <mat-form-field>
-          <mat-label>Section</mat-label>
+          <mat-label>Sección</mat-label>
           <mat-select formControlName="section">
             <mat-option
               [value]="sectioinArray"
@@ -50,7 +50,7 @@
             </mat-option>
           </mat-select>
           <mat-error *ngIf="handleError('section', 'required')">
-            Section is required
+            La <strong>sección</strong> es obligatoria
           </mat-error>
         </mat-form-field>
       </div>
@@ -68,11 +68,11 @@
               [removable]="removable"
               (removed)="remove(subjectArray)"
             >
-              {{ subjectArray.name }}
+              {{ subjectArray}}
               <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
             </mat-chip>
             <input
-              placeholder="Add subject"
+              placeholder="Asignaturas"
               [matChipInputFor]="chipList"
               [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
               [matChipInputAddOnBlur]="addOnBlur"
@@ -81,7 +81,7 @@
           </mat-chip-list>
           <i
             class="material-icons tooltip-info"
-            matTooltip="Enter subject name and press enter to add subjects"
+            matTooltip="Escribe el nombre de la asignatura y dale 'Enter' para añadirla"
           >
             info
           </i>
@@ -93,7 +93,7 @@
             matInput
             readonly
             [matDatepicker]="picker"
-            placeholder="Date of birth"
+            placeholder="Fecha de nacimiento"
             formControlName="dob"
             (dateChange)="formatDate($event)"
           />
@@ -103,19 +103,19 @@
           ></mat-datepicker-toggle>
           <mat-datepicker #picker></mat-datepicker>
           <mat-error *ngIf="handleError('dob', 'required')">
-            Date of birth is required
+            La <strong>fecha de nacimiento</strong> es obligatoria.
           </mat-error>
         </mat-form-field>
 
         <!-- Gender -->
         <div class="misc-bottom-padding">
-          <mat-label>Gender:</mat-label>
+          <mat-label>Género:</mat-label>
           <mat-radio-group
-            aria-label="Select an option"
+            aria-label="Selecciona una opción"
             formControlName="gender"
           >
-            <mat-radio-button value="Male">Male</mat-radio-button>
-            <mat-radio-button value="Female">Female</mat-radio-button>
+            <mat-radio-button value="Male">Hombre</mat-radio-button>
+            <mat-radio-button value="Female">Mujer</mat-radio-button>
           </mat-radio-group>
         </div>
       </div>
@@ -125,9 +125,13 @@
     <mat-card>
       <div class="full-wrapper button-wrapper">
         <div class="button-wrapper">
-          <button mat-flat-button color="warn">Update</button>
+          <button mat-flat-button id="updateButton" color="warn">Actualizar</button>
         </div>
       </div>
     </mat-card>
   </form>
 </div>
+
+<footer>
+  Este proyecto ha sido realizado por <strong>David Iglesias Guerra </strong>
+</footer>

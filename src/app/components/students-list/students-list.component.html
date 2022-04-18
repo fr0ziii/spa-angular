@@ -1,6 +1,6 @@
 <!-- Title group  -->
 <div class="title-group">
-  <h1 class="mat-h1">Students List</h1>
+  <h1 class="mat-h1">Lista de Estudiantes</h1>
   <mat-divider fxFlex="1 0"></mat-divider>
 </div>
 
@@ -8,16 +8,16 @@
   There is no student added yet!
 </p>
 
-<div class="container" *ngIf="StudentData.length > 0">
+<div class="container-fluid" *ngIf="StudentData.length > 0">
   <div class="mat-elevation-z8">
-    <table mat-table [dataSource]="dataSource">
+    <table class="" mat-table [dataSource]="dataSource">
       <ng-container matColumnDef="_id">
-        <th mat-header-cell *matHeaderCellDef>Student ID</th>
+        <th mat-header-cell *matHeaderCellDef>ID del estudiante</th>
         <td mat-cell *matCellDef="let element">{{ element._id }}</td>
       </ng-container>
 
       <ng-container matColumnDef="student_name">
-        <th mat-header-cell *matHeaderCellDef>Student Name</th>
+        <th mat-header-cell *matHeaderCellDef>Nombre del estudiante</th>
         <td mat-cell *matCellDef="let element">{{ element.student_name }}</td>
       </ng-container>
 
@@ -27,27 +27,27 @@
       </ng-container>
 
       <ng-container matColumnDef="section">
-        <th mat-header-cell *matHeaderCellDef>Section</th>
+        <th mat-header-cell *matHeaderCellDef>Sección</th>
         <td mat-cell *matCellDef="let element">{{ element.section }}</td>
       </ng-container>
 
       <ng-container matColumnDef="action">
-        <th mat-header-cell *matHeaderCellDef>Action</th>
+        <th mat-header-cell *matHeaderCellDef>Acciones</th>
         <td mat-cell *matCellDef="let element; let i = index">
-          <button
-            mat-raised-button
+          <button id="editButton"
+            mat-raised-button 
             color="primary"
             class="push-right"
             [routerLink]="['/edit-student/', element._id]"
           >
-            Edit
+            Editar
           </button>
-          <button
+          <button id="deleteButton"
             mat-raised-button
             color="accent"
             (click)="deleteStudent(i, element)"
           >
-            Delete
+            Borrar
           </button>
         </td>
       </ng-container>
@@ -57,8 +57,12 @@
     </table>
 
     <mat-paginator
-      [pageSizeOptions]="[5, 10, 20]"
+      [pageSizeOptions]="[10, 20, 50]"
       showFirstLastButtons
     ></mat-paginator>
   </div>
 </div>
+
+<footer>
+  Este proyecto ha sido realizado por <strong>David Iglesias Guerra </strong>
+</footer>

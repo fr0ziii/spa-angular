@@ -35,7 +35,7 @@ export class StudentsListComponent implements OnInit {
   ngOnInit() {}
 
   deleteStudent(index: number, e) {
-    if (window.confirm('Are you sure')) {
+    if (window.confirm('¿Estás seguro de eliminar al estudiante?')) {
       const data = this.dataSource.data;
       data.splice(
         this.paginator.pageIndex * this.paginator.pageSize + index,

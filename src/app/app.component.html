@@ -1,9 +1,9 @@
 <!-- Toolbar -->
-<mat-toolbar color="primary" class="header">
-  <div>SPA con Angular</div>
-  <span class="nav-tool-items">
-    <mat-icon (click)="sidenav.toggle()" class="hamburger">menu</mat-icon>
-  </span>
+<mat-toolbar class="header">
+  <div (click)="showMessage()" routerLinkActive="active" routerLink="/students-list"> SPA con Angular </div>
+  <button mat-icon-button (click)="sidenav.toggle()" class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
 </mat-toolbar>
 
 <mat-sidenav-container>
