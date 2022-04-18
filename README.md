@@ -58,6 +58,8 @@ Tras esto, dirigite a  `http://localhost:8000/api` y podrá ver los datos que es
 
 Ejecuta `ng build` para construir el proyecto.
 
+Este proyecto ha sido generado con [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
+
 ## Autor
 
 Este proyecto ha sido realizado por David Iglesias Guerra
