@@ -7,7 +7,7 @@
 Al iniciar la aplicación, la ventana principal  te dirige a la ruta '/add-student' qué es desde donde añadimos los estudiantes a la base de datos.
 
 Tenemos dos opciones en el menú contextual del lado derecho:
-![sidenav](https://user-images.githubusercontent.com/58311234/163860862-afacb4fc-7f46-414c-92e1-8e02fdcbf93e.PNG)
+    ![sidenav](https://user-images.githubusercontent.com/58311234/163860862-afacb4fc-7f46-414c-92e1-8e02fdcbf93e.PNG)
 
     "Añadir estudiante": Nos dirige a la ruta '/add-student', desde donde podemos añadir un estudiante
     ![anadir](https://user-images.githubusercontent.com/58311234/163861069-4e4565e3-9161-4aab-a612-0ed2157549a0.PNG)
