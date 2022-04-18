@@ -25,9 +25,6 @@ Para editar un estudiante, debemos dirigirnos a la vista de "Lista de Estudiante
 
 Para borrar un estudiante, debemos dirigirnos a la vista de "Lista de Estudiantes', y hacer clic en 'Borrar', este botón nos enviará una alerta para confirmar si estamos seguros de borrar.
 
-# SPA con Angular
-
-Este proyecto ha sido generado con [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
 
 ## Iniciar la aplicación
 
