@@ -36,6 +36,7 @@ Una vez descargado el repositorio, digirse al directorio principal y ejecutar el
 Ejecuta la orden `ng serve` para el servidor de desarrollo. Dirigete a `http://localhost:4200/`. La aplicación se recargará automáticamente si cambias algunos de los ficheros fuente.
 
 Para activar la base de datos y a su vez la API, debe de descargar y instalar MongoDB Compass.
+
 (Descarga disponible en: `https://fastdl.mongodb.org/windows/mongodb-windows-x86_64-5.0.6-signed.msi`)
 
 1. Conectarse a su servidor de base de datos, y crear una base de datos con el nombre "users".
