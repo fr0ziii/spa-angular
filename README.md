@@ -11,11 +11,11 @@ Al iniciar la aplicación, la ventana principal  te dirige a la ruta '/add-stude
 Tenemos dos opciones en el menú contextual del lado derecho:
    Añadir estudiante: Nos dirige a la ruta '/add-student', desde donde podemos añadir un estudiante
    
-    ![anadir](https://user-images.githubusercontent.com/58311234/163861069-4e4565e3-9161-4aab-a612-0ed2157549a0.PNG)
+   ![anadir](https://user-images.githubusercontent.com/58311234/163861069-4e4565e3-9161-4aab-a612-0ed2157549a0.PNG)
 
    Ver estudiantes: Nos dirige a la ruta '/students-list', desde donde podemos ver todos los estudiantes que se encuentran en la base de datos y para cada estudiante, la opción de "Editar" o "Borrar".
    
-    ![lista_estudiantes](https://user-images.githubusercontent.com/58311234/163861076-50368b39-a5d9-4e23-b0ed-ebd68dd24089.PNG)
+   ![lista_estudiantes](https://user-images.githubusercontent.com/58311234/163861076-50368b39-a5d9-4e23-b0ed-ebd68dd24089.PNG)
 
 A su vez, si hacemos clic en el título de la barra de navegación ("SPA con Angular") nos mostrará una alerta en el navegador y a la vez nos redigirirá a la ruta '/students-list'.
 
